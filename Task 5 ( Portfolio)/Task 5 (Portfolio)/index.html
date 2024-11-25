@@ -12,6 +12,23 @@
     ul{
         list-style-type: none;
     }
+    @keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
   </style>
 </head>
 <body>
@@ -30,11 +47,23 @@
   </header>
 
   <main>
+    <div class="parent">
+
     <section id="hero">
       <h1 >Welcome to My Portfolio !</h1>
-      <b><p>Sworup Gautam</p></b>
-      <p>Computer Engineering Student.</p>
+      <b><h2 style="color: white;">Sworup Gautam</h2 style="color: white;"></b>
+      <h2 style="color: greenyellow;display: inline-block; 
+      overflow: hidden; 
+      white-space: nowrap; 
+      border-right: 2px solid black; 
+      animation: typing 4s steps(30, end), blink 0.6s step-end infinite;"> < UI/UX Designer > </UI></h2 style="color: white;">
     </section>
+
+    <section id="image">
+      <img src="./image.png" alt="image">
+    </section>
+
+     </div>  <hr>
 
     <section id="featured-projects">
       <h2>Featured Projects</h2>
@@ -47,6 +76,7 @@
         <p>MiniNepal - A project based on Education Management System.</p>
       </div>
     </section>
+
 <hr>
     <section id="skills">
       <h2>My Skills</h2>
