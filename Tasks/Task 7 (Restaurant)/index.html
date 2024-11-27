@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .background{
+            height: 130vh;
+            background: url('./restaurant-bg2.jpg') center/cover no-repeat;
+            top: 0;            
+            margin-left: 80px;
+            margin-right: 80px;
+            overflow: hidden;
+            filter: contrast(100%);
+        }
+        .navbar{
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            /* color: rgba(255, 255, 255, 0.8);  */
+            backdrop-filter: blur(3px);  
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
+            transition: background-color 0.3s ease-in-out;
+        }
+        .logo{
+            font-family: "Nunito", sans-serif;
+            font-weight: 700;
+            color: rgba(254, 161, 22, 1);
+            font-size: 2.5rem;
+        }
+        .nav-topics{
+            color: white;
+            align-items: center;
+            font-size: 1.5rem;
+            height: 50px;
+            width: 700px;
+            /* text-decoration-color: greenyellow; */
+            display: flex;
+            justify-content: space-between;
+        }
+       
+        button{
+            color: white;
+            font-weight: 700;
+            background-color: rgba(254, 161, 22, 1);
+            border-radius: 5px;
+            height: 45px;
+            width: 125px;
+        }
+        button:hover{
+            background-color: rgb(255, 128, 0);
+            cursor: pointer;
+        }
+
+        .nav-topics a1{
+            text-decoration: none;
+            text-shadow:2px 2px 3px white;
+        }
+        .nav-topics a1:hover{
+            color: rgb(255, 128, 0);
+            text-shadow: none;
+            cursor: pointer;
+        }
+        .nav-topics a2{
+            text-decoration: none;
+            text-shadow:2px 2px 3px white;
+        }
+        .nav-topics a2:hover{
+            color: rgb(255, 128, 0);
+            text-shadow: none;
+        }
+
+        .hero{
+            display: flex;
+            padding-left: 25px;
+            height: 100%;
+            /* border: 2px solid; */
+            /* align-items: start; */
+            /* text-align: center;
+            align-content: center; */
+         
+        }
+        #text{
+            padding-top: 200px;
+            color: white;
+            font-family: "Nunito", sans-serif;
+            width: 50%;
+            text-align: start;
+            /* text-align: center;
+            align-content: center; */
+
+        }
+        /* #image{
+            width: 50%;
+        } */
+
+        h1{
+            font-weight:1000 ;
+            font-size: 35px;
+            text-align: start;
+            align-content: center;
+        }
+
+        .image1{
+            /* transition-timing-function: linear;
+            transition: all 2s; */
+            /* transform: rotate(360); */
+            
+            animation-name: pizza;
+            animation-duration: 60s;
+            animation-iteration-count: infinite;
+
+             scale: 0.8;
+
+            height: auto;
+            max-width: 100%;
+
+        }
+
+        @keyframes pizza {
+             0% {
+             transform: rotate(0deg);
+             }
+             /* 25% {
+             transform: rotate(90deg);
+             }
+             50%{
+                transform: rotate(180deg);
+             }
+             75%{
+                transform: rotate(275deg);
+             } */
+             100% {
+             transform: rotate(360deg);
+             }
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="background">
+        <!-- <img src="./restaurant-bg.jpg" alt=""> -->
+
+        <div class="navbar">
+            
+            <div class ="logo"><i class="fa-solid fa-utensils"></i><a style="text-decoration: none; color:rgba(254, 161, 22, 1);" href="#"> Restoran</a></div>
+
+             <div class="nav-topics">
+                <a1 style="color: rgb(245, 125, 51); text-shadow: none; font-size: larger;" href="#">Home</a1>
+                <a1 href="#">About</a1>
+                <a1 href="#">Service</a1>
+                <a1 href="#">Menu</a1>
+
+                    <a2 href="#">Pages</a2>   
+                   
+                        <!-- <a href="#">Nature</a>
+                        <a href="#">People</a>
+                        <a href="#">Architecture</a> -->
+
+                <a1 href="#">Contact</a1>
+
+                <button href="#">BOOK A TABLE</button>
+
+             </div>
+        </div>          <!-- Navbar end -->
+
+
+        <div class="hero">
+            <div class="hero1" id="text">
+                <h1>Enjoy Our  <br>
+                Delicious Meal</h1>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                <button href="#">BOOK A TABLE</button>
+            </div>
+
+            <div class="hero1" id="image">
+                <img class="image1" src="./item.png" alt="">
+            </div>
+        </div>
+
+
+</div>
+
+</body>
+</html>
